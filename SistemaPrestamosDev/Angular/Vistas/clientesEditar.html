@@ -1,0 +1,191 @@
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Actualizacion de Cliente</h2>
+                <form>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input minlength="2" oninvalid="setCustomValidity('Minimo 2 caracteres')" oninput="setCustomValidity('')" ng-model="vmclientEditar.Nombre" class="input--style-1" type="text" placeholder=" " name="name">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Nombre(s)<span class="text-danger">*</span></label>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input minlength="2" oninvalid="setCustomValidity('Minimo 2 caracteres')" oninput="setCustomValidity('')" ng-model="vmclientEditar.Apellido" class="input--style-1" type="text" placeholder=" "
+                                       name="lastname">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Apellido(s)<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input maxlength="10" minlength="10" id="number-input" ng-model="vmclientEditar.Celular" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Celular<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input--style-1" style="width: 90px;">
+                                    <select ng-click="vmclientEditar.selectEstatus()" id="selEstatus" name="gender">
+                                        <option disabled="disabled" selected="selected">Estatus*</option>
+                                        <option ng-selected="vmclientEditar.Estatus == 'Vigente'">Vigente</option>
+                                        <option ng-selected="vmclientEditar.Estatus == 'Inactivo'">Inactivo</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input id="number-input4" ng-model="vmclientEditar.Credito" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Cr&eacutedito<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar INE(Frontal):<span
+                                    class="text-danger"></span></label>
+                            <input type="file" accept="image/*" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="ineFile1" ng-model="vmclientEditar.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientEditar.inePosterior()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientEditar.NombreINEF}}</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar INE(Posterior):<span
+                                    class="text-danger"></span></label>
+                            <input type="file" accept="image/*" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="ineFile2" ng-model="vmclientEditar.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientEditar.ineFrontal()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientEditar.NombreINEP}}</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar Comprobante de domicilio:<span
+                                    class="text-danger"></span></label>
+                            <input type="file" accept="image/*" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="comprobante" ng-model="vmclientEditar.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientEditar.comprobante()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientEditar.NombreComprobante}}</label>
+                        </div>
+                    </div>
+
+                    
+
+                    <section>
+                        <h1>
+                            Referencias
+                        </h1>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">1</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input ng-model="vmclientEditar.Ref1" class="input--style-1" type="text" placeholder=" " name="Ref1">
+                                    <label style="margin-left: -10px;" for="myInput" class="input-label">Nombre Completo<span class="text-danger"></span></label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input id="number-input2" maxlength="10" ng-model="vmclientEditar.Ref1cel" class="input--style-1" type="text" placeholder=" " name="Refcel1">
+                                    <label style="margin-left: -10px;" for="myInput" class="input-label">Celular<span class="text-danger"></span></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">2</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input ng-model="vmclientEditar.Ref2" class="input--style-1" type="text" placeholder=" " name="Ref2">
+                                    <label style="margin-left: -10px;" for="myInput" class="input-label">Nombre Completo<span class="text-danger"></span></label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input id="number-input3" maxlength="10" ng-model="vmclientEditar.Ref2cel" class="input--style-1" type="text" placeholder=" " name="Refcel2">
+                                    <label style="margin-left: -10px;" for="myInput" class="input-label">Celular<span class="text-danger"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <div class="col-md-12 text-center" style="margin-top: 1rem;">
+                        <button class="btn btn--radius btn--green" type="submit" ng-click="vmclientEditar.actualizarCliente(vmclientEditar.Nombre,vmclientEditar.Apellido,vmclientEditar.Celular, vmclientEditar.Credito,vmclientEditar.Ref1,vmclientEditar.Ref2, vmclientEditar.Ref1cel,vmclientEditar.Ref2cel)">Guardar</button>
+                        <button class="btn btn--radius btn--green" type="submit"
+                        ng-click="vmclientEditar.Volver()">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var numberInput = document.getElementById("number-input");
+    var numberInput2 = document.getElementById("number-input2");
+    var numberInput3 = document.getElementById("number-input3");
+    var numberInput4 = document.getElementById("number-input4");
+    numberInput.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput2.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput3.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput4.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+</script>

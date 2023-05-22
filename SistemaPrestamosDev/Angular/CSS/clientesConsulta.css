@@ -1,0 +1,26 @@
+.btn:hover, .btn:focus {
+    color: #ffffff !important; 
+    text-decoration: none;
+    background-color: #505050 !important;
+}
+
+.btn{
+    margin-left: 2rem !important;
+}
+
+.searchform{
+    color: wheat;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: medium;
+}
+
+.container{
+    margin-left: 0rem !important;
+    font-size: 14px;
+}
+
+.inputSearch{
+    border-radius: 20px;
+    text-align: center;
+}

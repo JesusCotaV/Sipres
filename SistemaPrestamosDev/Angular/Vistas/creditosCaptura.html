@@ -1,0 +1,201 @@
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Nuevo Préstamo</h2>
+                <form>
+
+                    <div class="row">
+                        
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input--style-1" style="width: auto;">
+                                    <select ng-click="vmcreditosC.selectCliente()" id="selCliente" name="gender">
+                                        <option disabled="disabled" selected="selected">Seleccione Cliente*</option>
+                                        <option ng-repeat="x in ListadoClientesNombres">{{ x.Nombre }} {{ x.Apellido }}</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+ 
+                    </div>
+                    
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group" style="width: auto;">
+                                <input disabled class="input--style-1" type="text" ng-model="vmcreditosC.Credito.CreditoDisponible"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       name="Credito Disponible" placeholder=" " data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Crédito Disponible</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input id="number-input" class="input--style-1" type="text" ng-model="vmcreditosC.prestamo"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="prestamo" data-type="currency" ng-keyup="vmcreditosC.ValidarPrestamo(vmcreditosC.prestamo)">
+                                <label style="margin-left: -10px;" for="myInput2" class="input-label">Préstamo<span class="text-danger">*</span></label>
+                                <small id="Message" class="form-text text-muted">{{ Message }}</small>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input id="myInput" disabled class="input--style-1" type="text" ng-model="vmcreditosC.deuda"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="deuda" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput3" class="input-label">Deuda total<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input id="myInput2" class="input--style-1" type="text" ng-model="vmcreditosC.pago"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="Pago" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput4" class="input-label">Pago<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input--style-1" style="width: auto;">
+                                    <select ng-click="vmcreditosC.selectTipo()" id="selTipo" name="gender">
+                                        <option disabled="disabled" selected="selected">Tipo de pago*</option>
+                                        <option>Semanal</option>
+                                        <option>Quincenal</option>
+                                        <option>Mensual</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">
+                                Cargar Pagaré:
+                            </label>
+                            <input accept="image/*" type="file" base-sixty-four-input onload="onLoad" ng-hide="true"
+                                   class="form-control" id="pagare" ng-model="vmcreditosC.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                    title="Title" ng-click="vmcreditosC.Pagares()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmcreditosC.NombrePagare}}</label>
+                        </div>
+                    </div>
+
+                    <section>
+                        <h1>
+                            Avales
+                        </h1>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">1</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+
+                                    <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                           oninvalid="setCustomValidity('Solo letras')" ng-model="vmcreditosC.aval1"
+                                           class="input--style-1" type="text" placeholder=" "
+                                           name="aval1">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input maxlength="10" id="number-input3" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                           ng-model="vmcreditosC.aval1cel" class="input--style-1" type="text"
+                                           placeholder=" " name="avalcel1">
+                                    <label style="margin-left: -10px;" for="myInput6" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">2</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+
+                                    <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                           oninvalid="setCustomValidity('Solo letras')" ng-model="vmcreditosC.aval2"
+                                           class="input--style-1" type="text" placeholder=" "
+                                           name="aval2">
+                                    <label style="margin-left: -10px;" for="myInput7" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input maxlength="10" id="number-input2" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                           ng-model="vmcreditosC.aval2cel" class="input--style-1" type="text"
+                                           placeholder=" " name="avalcel2">
+                                    <label style="margin-left: -10px;" for="myInput8" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-md-12 text-center" style="margin-top: 1rem;">
+                        <button class="btn btn--radius btn--green" type="submit"
+                            ng-click="vmcreditosC.capturarPrestamo(vmcreditosC.prestamo,vmcreditosC.deuda,vmcreditosC.aval1,vmcreditosC.aval2,vmcreditosC.aval1cel,vmcreditosC.aval2cel,vmcreditosC.pago)">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var numberInput = document.getElementById("number-input");
+    var numberInput2 = document.getElementById("myInput");
+    var numberInput3 = document.getElementById("myInput2");
+    var numberInput4 = document.getElementById("number-input2");
+    var numberInput5 = document.getElementById("number-input3");
+    numberInput.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput2.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput3.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput4.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput5.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+</script>

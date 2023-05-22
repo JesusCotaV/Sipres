@@ -1,0 +1,178 @@
+<div id="image-viewer">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="full-image">
+</div>
+
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Informaci&oacuten del Cliente</h2>
+                <form>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Nombre" ng-bind="vmclientVer.Nombre"
+                                       value="vmclientVer.Nombre" class="input--style-1" required type="text"
+                                       placeholder=" " name="name">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre(s)</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Apellido" ng-bind="vmclientVer.Apellido"
+                                       value="vmclientVer.Apellido" class="input--style-1" required type="text"
+                                       placeholder=" " name="lastname">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Apellido(s)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Celular" ng-bind="vmclientVer.Celular"
+                                       value="vmclientVer.Celular" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Celular</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Estatus" ng-bind="vmclientVer.Estatus"
+                                       value="vmclientVer.Estatus" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Estatus</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Credito" ng-bind="vmclientVer.Credito"
+                                       value="vmclientVer.Credito" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Cr&eacutedito</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmclientVer.Fecha" ng-bind="vmclientVer.Fecha"
+                                       value="vmclientVer.Fecha" class="input--style-1" type="text"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="cel">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Fecha</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">INE(Frontal):<span
+                                    class="text-danger"></span></label>
+                            <img class="images" src="{{vmclientVer.INEF}}" alt="image 1" class="w-100 rounded-3"
+                                width="300" height="200">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">INE(Posterior):<span
+                                    class="text-danger"></span></label>
+                            <img class="images" src="{{vmclientVer.INEP}}" alt="image 1" class="w-100 rounded-3"
+                                width="300" height="200">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Comprobante de domicilio:<span
+                                    class="text-danger"></span></label>
+                            <img class="images" src="{{vmclientVer.Comprobante}}" alt="image 1" class="w-100 rounded-3"
+                                width="300" height="200">
+                        </div>
+                    </div>
+
+                    <section>
+                        <h1>
+                            Referencias
+                        </h1>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">1</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly ng-model="vmclientVer.Ref1" ng-bind="vmclientVer.Ref1"
+                                           value="vmclientVer.Ref1" class="input--style-1" required type="text"
+                                           placeholder=" " name="Ref1">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly ng-model="vmclientVer.Ref1cel" ng-bind="vmclientVer.Ref1cel"
+                                           value="vmclientVer.Ref1cel" class="input--style-1" required type="text"
+                                           placeholder=" " name="Ref1cel">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">2</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly ng-model="vmclientVer.Ref2" ng-bind="vmclientVer.Ref2"
+                                           value="vmclientVer.Ref2" class="input--style-1" required type="text"
+                                           placeholder=" " name="Ref2">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly ng-model="vmclientVer.Ref2cel" ng-bind="vmclientVer.Ref2cel"
+                                           value="vmclientVer.Ref2cel" class="input--style-1" required type="text"
+                                           placeholder=" " name="Ref2cel">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-md-12 text-center" style="margin-top: 2rem;">
+                        <button class="btn btn--radius btn--green" type="submit"
+                        ng-click="vmclientVer.Volver()">Volver</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(".images").click(function () {
+        $("#full-image").attr("src", $(this).attr("src"));
+        $('#image-viewer').show();
+    });
+
+    $("#image-viewer .close").click(function () {
+        $('#image-viewer').hide();
+    });
+</script>

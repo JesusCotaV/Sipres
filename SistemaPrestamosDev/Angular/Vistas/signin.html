@@ -1,0 +1,45 @@
+﻿<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Crear usuario</h2>
+                <form>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input minlength="2" id="myInput" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required oninvalid="this.setCustomValidity('Ingrese una dirección de correo válida, por ejemplo: ejemplo@dominio.com')" oninput="setCustomValidity('')"
+                                       ng-model="vmsignin.email" class="input--style-1" type="email"
+                                       placeholder=" " name="Email">
+                                <label style="margin-left: -10px;" for="myInput" class="input-label">Email<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input minlength="2" id="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required oninvalid="setCustomValidity('La contraseña debe tener al menos 8 caracteres y cumplir con los siguientes requisitos:\n- Al menos una letra minúscula\n- Al menos una letra mayúscula\n- Al menos un dígito\n- Al menos un carácter especial entre $!%*?&')" oninput="setCustomValidity('')"
+                                       ng-model="vmsignin.password" class="input--style-1" type="password"
+                                       placeholder=" " name="password">
+                                <label style="margin-left: -10px;" for="password" class="input-label">Password<span class="text-danger">*</span></label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-12 text-center" style="margin-top: 1rem;">
+                        <button class="btn btn--radius btn--green" type="submit"
+                                ng-click="vmsignin.signin(vmsignin.email,vmsignin.password)">
+                            Confirmar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

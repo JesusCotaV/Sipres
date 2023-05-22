@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="ISO-8859-1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sipres</title>
+    <link rel="stylesheet" href="~/Angular/CSS/Home.css" />
+    <link href="~/Angular/CSS/clientes.css" rel="stylesheet" />
+    <link href="~/Angular/CSS/clientesConsulta.css" rel="stylesheet" />
+    <link href="~/Angular/CSS/clientesVer.css" rel="stylesheet" />
+    <link href="~/Angular/CSS/select2.min.css" rel="stylesheet" media="all">
+    <link href="~/Angular/CSS/daterangepicker.css" rel="stylesheet" media="all">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="sidebar">
+        <div class="col-sm-offset-0 col-sm-1">
+        </div>
+        <div class="nav-header">
+            <p class="logo"><img style="width: 78px; filter: drop-shadow(1px 1px 1px white) drop-shadow(1px 1px 1px white) drop-shadow(-1px 0px 6px white)" src="~/Images/logoAdelante.png" /></p>
+            <i class="bx bx-menu btn-menu"></i>
+        </div>
+        <ul class="nav-links">
+            <li id="myButton">
+                <a href="#!login" onclick="logOut()">
+                    <i class='bx bx-log-out'></i>
+                    <span class="title">Cerrar Sesion</span>
+                </a>
+                <span class="tooltip">Cerrar Sesion</span>
+            </li>
+            
+            <li>
+                <a href="#!clientes-captura">
+                    <i class='bx bx-group'></i>
+                    <span class="title">Registro de Clientes</span>
+                </a>
+                <span class="tooltip">Registro de Clientes</span>
+            </li>
+            <li>
+                <a href="#!clientes-consulta">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="title">Consulta de clientes</span>
+                </a>
+                <span class="tooltip">Consulta de clientes</span>
+            </li>
+            <li>
+                <a href="#!creditos-captura">
+                    <i class="bx bx-wallet-alt"></i>
+                    <span class="title">Nuevo Prestamo</span>
+                </a>
+                <span class="tooltip">Nuevo Prestamo</span>
+            </li>
+            <li>
+                <a href="#!creditos-consulta">
+                    <i class='bx bx-list-ol'></i>
+                    <span class="title">Consulta de creditos</span>
+                </a>
+                <span class="tooltip">Consulta de creditos</span>
+            </li>
+            <li>
+                <a href="#!pagos-consulta">
+                    <i class='bx bx-history'></i>
+                    <span class="title">Consulta de pagos</span>
+                </a>
+                <span class="tooltip">Consulta de pagos</span>
+            </li>
+        </ul>
+        <div class="theme-wrapper">
+            <i id="themeIcon" class="bx bxs-moon theme-icon"></i>
+            <p id="p1">Dark Theme</p>
+            <div class="theme-btn">
+                <label class="switch">
+                    <input id="themeBtn" type="checkbox" onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section class="home">
+        @*aqui va el contenido*@
+        <ng-view></ng-view>
+    </section>
+
+    <script>
+        const btn_menu = document.querySelector(".btn-menu");
+        const side_bar = document.querySelector(".sidebar");
+
+        btn_menu.addEventListener("click", function () {
+            side_bar.classList.toggle("expand");
+            changebtn();
+        });
+
+        function changebtn() {
+            if (side_bar.classList.contains("expand")) {
+                btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        }
+
+        // function to set a given theme/color-scheme
+        function setTheme(themeName) {
+            localStorage.setItem('theme', themeName);
+            document.documentElement.className = themeName;
+        }
+        // function to toggle between light and dark theme
+        function toggleTheme() {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-light');
+                document.getElementById("themeIcon").setAttribute("class", "bx bx-sun theme-icon");
+                document.getElementById("p1").innerHTML = "Light Theme";
+            } else {
+                setTheme('theme-dark');
+                document.getElementById("themeIcon").setAttribute("class", "bx bxs-moon theme-icon");
+                document.getElementById("p1").innerHTML = "Dark Theme";
+            }
+        }
+        // Immediately invoked function to set the theme on initial load
+        (function () {
+            if (localStorage.getItem('theme') === 'theme-dark') {
+                setTheme('theme-dark');
+                document.getElementById("themeBtn").setAttribute("checked", "");
+                document.getElementById("themeIcon").setAttribute("class", "bx bxs-moon theme-icon");
+                document.getElementById("p1").innerHTML = "Dark Theme";
+            } else {
+                setTheme('theme-light');
+                document.getElementById("themeBtn").removeAttribute("checked", "");
+                document.getElementById("themeIcon").setAttribute("class", "bx bx-sun theme-icon");
+                document.getElementById("p1").innerHTML = "Light Theme";
+            }
+        })();
+    </script>
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <!-- Referencias -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/firebase/firebase.js"></script>
+    <script src="~/Scripts/firebase/angularfire.js"></script>
+    <script src="~/Scripts/slider.js"></script>
+    <script src="~/Scripts/angular-base64-upload.js"></script>
+    <script src="~/Scripts/select2.min.js"></script>
+    <script src="~/Scripts/daterangepicker.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <!-- Servicios -->
+    <script src="~/Angular/Servicios/app.js"></script>
+    <script src="~/Angular/Servicios/conexion.js"></script>
+    <script src="~/Angular/Servicios/config.js"></script>
+    <script src="~/Angular/servicios/app.Servicios.js"></script>
+    <script src="~/Angular/servicios/commonFactory.js"></script>
+    <!-- Controladores -->
+    <script src="~/Angular/Controladores/inicio.js"></script>
+    <script src="~/Angular/Controladores/clientesCaptura.js"></script>
+    <script src="~/Angular/Controladores/clientesConsulta.js"></script>
+    <script src="~/Angular/Controladores/clientesVer.js"></script>
+    <script src="~/Angular/Controladores/clientesEditar.js"></script>
+    <script src="~/Angular/Controladores/creditosCaptura.js"></script>
+    <script src="~/Angular/Controladores/creditosConsulta.js"></script>
+    <script src="~/Angular/Controladores/creditosEditar.js"></script>
+    <script src="~/Angular/Controladores/creditosVer.js"></script>
+    <script src="~/Angular/Controladores/pagosConsulta.js"></script>
+    <script src="~/Angular/Controladores/Login.js"></script>
+    <script src="~/Angular/Controladores/signin.js"></script>
+
+    <script>
+        var rootUrl = '/SistemaPrestamosDev/';
+
+        function Funcion() {
+            var element = document.getElementById("myMenu");
+            element.classList.toggle("show");
+        }
+
+        function logOut() {
+
+            var emailVer = localStorage.getItem('email');
+            if (emailVer != "") {
+                debugger;
+                Swal.fire({
+                    title: 'Cerrando sesion',
+                    text: 'Espere un momento.',
+                    imageUrl: 'https://cdn.dribbble.com/users/12755/screenshots/1037374/hex-loader2.gif',
+                    imageHeight: 200,
+                    imageAlt: 'Custom image',
+                    showConfirmButton: false,
+                    timer: 1500,
+                }).then((result) => {
+                    Swal.fire({
+                        title: 'Cierre exitoso',
+                        text: 'Hasta luego',
+                        icon: 'success',
+                        imageHeight: 200,
+                        imageAlt: 'Custom image',
+                        showConfirmButton: false,
+                        timer: 1500,
+                    })
+
+                })
+
+                localStorage.setItem('email', "");
+            }
+            if (emailVer == undefined || emailVer == null) {
+
+                    Swal.fire({
+                        title: 'Error!',
+                        text: 'Aún no ha iniciado sesión',
+                        icon: 'error',
+                        imageHeight: 200,
+                        imageAlt: 'Custom image',
+                        showConfirmButton: true,
+                    })
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

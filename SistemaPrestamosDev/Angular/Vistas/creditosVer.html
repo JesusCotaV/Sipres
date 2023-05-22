@@ -1,0 +1,156 @@
+<div id="image-viewer">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="full-image">
+</div>
+<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Informacion del Préstamo</h2>
+                <form>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly ng-model="vmcreditosVer.Cliente" class="input--style-1" type="text" placeholder=" " name="name">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Cliente</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly class="input--style-1" type="text" ng-model="vmcreditosVer.Prestamo"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="prestamo" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Préstamo</label>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly class="input--style-1" type="text" ng-model="vmcreditosVer.Deuda"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="deuda" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Deuda total</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input readonly class="input--style-1" type="text" ng-model="vmcreditosVer.Pago"
+                                       onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                       placeholder=" " name="Pago" data-type="currency">
+                                <label style="margin-left: -10px;" for="myInput5" class="input-label">Pago</label>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input--style-1" style="width: auto;">
+                                    <select disabled ng-click="vmcreditosEditar.selectTipo()" id="selTipo" name="gender">
+                                        <option ng-selected="vmcreditosVer.TipoPago == 'Semanal'">Semanal</option>
+                                        <option ng-selected="vmcreditosVer.TipoPago == 'Semanal'">Quincenal</option>
+                                        <option ng-selected="vmcreditosVer.TipoPago == 'Mensual'">Mensual</option>
+                                    </select>
+
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">
+                                Pagaré:<span class="text-danger"></span>
+                            </label>
+                            <img class="images" src="{{vmcreditosVer.ArchivoPagare}}" alt="image 1" class="w-100 rounded-3"
+                                width="300" height="200">
+                        </div>
+                    </div>
+
+                    <section>
+                        <h1>
+                            Avales
+                        </h1>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">1</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                           oninvalid="setCustomValidity('Solo letras')" ng-model="vmcreditosVer.Aval1"
+                                           class="input--style-1" type="text" placeholder=" "
+                                           name="aval1">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                           ng-model="vmcreditosVer.Aval1cel" class="input--style-1" type="number"
+                                           placeholder=" " name="avalcel1">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">2</span>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                           oninvalid="setCustomValidity('Solo letras')" ng-model="vmcreditosVer.Aval2"
+                                           class="input--style-1" type="text" placeholder=" "
+                                           name="aval2">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Nombre Completo</label>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <input readonly onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                           ng-model="vmcreditosVer.Aval2cel" class="input--style-1" type="number"
+                                           placeholder=" " name="avalcel2">
+                                    <label style="margin-left: -10px;" for="myInput5" class="input-label">Celular</label>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-md-12 text-center" style="margin-top: 1rem;">
+                        <button class="btn btn--radius btn--green" type="submit" ng-click="vmcreditosVer.actualizarCredito(vmcreditosEditar.Aval1,vmcreditosEditar.Aval2,vmcreditosEditar.Aval1cel,vmcreditosEditar.Aval2cel,vmcreditosEditar.Pago)">Guardar</button>
+                        <button class="btn btn--radius btn--green" type="submit"
+                        ng-click="vmcreditosVer.Volver()">Volver</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(".images").click(function () {
+        $("#full-image").attr("src", $(this).attr("src"));
+        $('#image-viewer').show();
+    });
+
+    $("#image-viewer .close").click(function () {
+        $('#image-viewer').hide();
+    });
+</script>

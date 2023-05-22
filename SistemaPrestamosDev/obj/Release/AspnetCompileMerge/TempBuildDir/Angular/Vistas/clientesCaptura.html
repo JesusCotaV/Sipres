@@ -1,0 +1,190 @@
+﻿<div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
+    <div class="wrapper wrapper--w680">
+        <div class="card card-1">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title2">Registro de Clientes</h2>
+                <form>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" oninvalid="setCustomValidity('Solo letras')"
+                                    ng-model="vmclientC.name" class="input--style-1"  type="text"
+                                    placeholder="Nombre(s)" name="name">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" oninvalid="setCustomValidity('Solo letras')"
+                                    ng-model="vmclientC.lastname" class="input--style-1"  type="text"
+                                    placeholder="Apellido(s)" name="lastname">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group">
+                                <input id="number-input" ng-model="vmclientC.cel" class="input--style-1" type="text"
+                                onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                    placeholder="Celular" name="cel">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <div class="input--style-1" style="width: 90px;">
+                                    <select ng-click="vmclientC.selectEstatus()" id="selEstatus" name="gender">
+                                        <option disabled="disabled" selected="selected">Estatus</option>
+                                        <option>Activo</option>
+                                        <option>No activo</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="input-group">
+                                <input ng-model="vmclientC.credito" class="input--style-1" type="text"
+                                    onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                    placeholder="Credito" name="credito" data-type="currency">
+                            </div>
+                        </div>
+
+                        <div class="col">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar INE(Frontal):<span
+                                    class="text-danger">*</span></label>
+                            <input type="file" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="ineFile1" ng-model="vmclientC.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientC.inePosterior()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientC.Cliente.NombreDocumentoINEF}}</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar INE(Posterior):<span
+                                    class="text-danger">*</span></label>
+                            <input type="file" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="ineFile2" ng-model="vmclientC.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientC.ineFrontal()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientC.Cliente.NombreDocumentoINEP}}</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Cargar Comprobante de domicilio:<span
+                                    class="text-danger">*</span></label>
+                            <input type="file" base-sixty-four-input  onload="onLoad" ng-hide="true"
+                                class="form-control" id="comprobante" ng-model="vmclientC.Archivo" />
+                            <button class="btn2 btn-md btn-center btn-primary" type="button" sdata-toggle="tooltip"
+                                title="Title" ng-click="vmclientC.Comprobante()">
+                                <span class="glyphicon glyphicon-paperclip"></span> Adjuntar Archivo
+                            </button>
+                            <label>{{vmclientC.Cliente.NombreDocumentoComprobante}}</label>
+                        </div>
+                    </div>
+
+                    <section>
+                        <h1>
+                            Referencias
+                        </h1>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">1</span>
+                                    </div>
+                                    <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                        oninvalid="setCustomValidity('Solo letras')" ng-model="vmclientC.ref1"
+                                        class="input--style-1"  type="text" placeholder="Nombre Completo"
+                                        name="Ref1">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><br></span>
+                                    </div>
+                                    <input id="number-input2" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                        ng-model="vmclientC.ref1cel" class="input--style-1"  type="text"
+                                        placeholder="Celular" name="Refcel1">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">2</span>
+                                    </div>
+                                    <input pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+"
+                                        oninvalid="setCustomValidity('Solo letras')" ng-model="vmclientC.ref2"
+                                        class="input--style-1"  type="text" placeholder="Nombre Completo"
+                                        name="Ref2">
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><br></span>
+                                    </div>
+                                    <input id="number-input3" onkeydown="javascript: return event.keyCode == 69 ? false : true"
+                                        ng-model="vmclientC.ref2cel" class="input--style-1"  type="text"
+                                        placeholder="Celular" name="Refcel2">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="col-md-12 text-center" style="margin-top: 1rem;">
+                        <button class="btn btn--radius btn--green" type="submit"
+                            ng-click="vmclientC.capturarCliente(vmclientC.name,vmclientC.lastname,vmclientC.cel, vmclientC.credito,vmclientC.ref1,vmclientC.ref2, vmclientC.ref1cel,vmclientC.ref2cel)">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var numberInput = document.getElementById("number-input");
+    var numberInput2 = document.getElementById("number-input2");
+    var numberInput3 = document.getElementById("number-input3");
+    numberInput.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput2.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+    numberInput3.addEventListener("input", function () {
+        var value = this.value;
+        value = value.replace(/\D/g, ''); // solo permite digitos numericos
+        this.value = value;
+    });
+</script>

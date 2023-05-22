@@ -1,0 +1,186 @@
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\ApplicationInsights.config
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\csc.exe
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\System.Collections.Immutable.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\vbc.exe
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\VBCSCompiler.exe
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\VBCSCompiler.exe.config
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.dll.config
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.pdb
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Antlr3.Runtime.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.SqlServer.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Web.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.WindowsServer.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.ApplicationInsights.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Google.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Web.Infrastructure.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Newtonsoft.Json.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Owin.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Net.Http.Formatting.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Helpers.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.Owin.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.WebHost.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Mvc.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Optimization.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Razor.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Deployment.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Razor.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\WebGrease.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Web.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.WindowsServer.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.ApplicationInsights.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Newtonsoft.Json.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Net.Http.Formatting.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Helpers.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.WebHost.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Mvc.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Optimization.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Razor.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Deployment.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Razor.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Antlr3.Runtime.pdb
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.SqlServer.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Google.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.Owin.xml
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.dll
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.pdb
+c:\users\syspad\documents\visual studio 2015\Projects\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csprojResolveAssemblyReference.cache
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\ApplicationInsights.config
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\csc.exe
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\System.Collections.Immutable.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\System.Reflection.Metadata.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\vbc.exe
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\VBCSCompiler.exe
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\roslyn\VBCSCompiler.exe.config
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.dll.config
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\SistemaPrestamosDev.pdb
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Antlr3.Runtime.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.SqlServer.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Agent.Intercept.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.DependencyCollector.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Web.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.WindowsServer.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.ApplicationInsights.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Core.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Cookies.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Facebook.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Google.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.OAuth.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Twitter.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Web.Infrastructure.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Newtonsoft.Json.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Owin.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Net.Http.Formatting.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Helpers.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.Owin.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.WebHost.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Mvc.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Optimization.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Razor.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Deployment.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Razor.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\WebGrease.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.DependencyCollector.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.Web.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AI.WindowsServer.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.ApplicationInsights.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Newtonsoft.Json.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Net.Http.Formatting.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Helpers.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.WebHost.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Mvc.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Optimization.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Razor.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Deployment.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.WebPages.Razor.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Antlr3.Runtime.pdb
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\EntityFramework.SqlServer.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Core.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Facebook.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Cookies.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.OAuth.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Google.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.Twitter.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\bin\System.Web.Http.Owin.xml
+C:\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csproj.AssemblyReference.cache
+C:\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csproj.CoreCompileInputs.cache
+C:\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csproj.CopyComplete
+C:\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.dll
+C:\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.pdb
+C:\Users\blazb\OneDrive\Imágenes\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csproj.AssemblyReference.cache
+C:\Users\blazb\OneDrive\Imágenes\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.csproj.CoreCompileInputs.cache
+C:\Users\blazb\OneDrive\Imágenes\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.dll
+C:\Users\blazb\OneDrive\Imágenes\SistemaPrestamosDev\SistemaPrestamosDev\obj\Debug\SistemaPrestamosDev.pdb
